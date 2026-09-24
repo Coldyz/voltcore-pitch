@@ -29,7 +29,7 @@ h2{font-size:clamp(38px,4.8vw,88px);font-weight:750;letter-spacing:-.032em;line-
 h2.xl{font-size:clamp(46px,6.4vw,120px)}
 .sub{font-size:clamp(19px,1.8vw,32px);color:var(--muted);font-weight:500;line-height:1.3;margin:2.2vh 0 0;letter-spacing:-.012em}
 .sub b{color:var(--text);font-weight:600}
-.g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .m{color:var(--muted)}
 .red{color:var(--alert)}
 sup{font-size:.6em;color:var(--muted);font-weight:600;margin-left:.1em;vertical-align:super;letter-spacing:0;-webkit-text-fill-color:var(--muted)}
@@ -153,12 +153,12 @@ h1 sup,h2 sup{font-size:.3em}
 #p1a{justify-content:flex-end;padding-bottom:8vh}#p1a .big{font-size:clamp(56px,8.4vw,150px)}#p1a .sub{margin-top:1.2vh}
 .topfade{position:absolute;left:0;right:0;top:0;height:50vh;background:linear-gradient(#000 0%,rgba(0,0,0,.75) 40%,rgba(0,0,0,0));pointer-events:none}
 .rux{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4vw;width:min(84vw,1500px);margin-top:5vh;text-align:left}
-.rux>div{border-top:1px solid var(--line);padding-top:2vh}.rux svg{width:clamp(64px,5.2vw,96px);height:auto;margin-bottom:1.4vh}
+.rux>div{padding-top:2vh}.rux svg{width:clamp(64px,5.2vw,96px);height:auto;margin-bottom:1.4vh}
 .rux b{display:block;font-size:clamp(20px,1.9vw,34px);letter-spacing:-.02em;margin-bottom:.8vh}.rux span{display:block;font-size:clamp(14px,1.15vw,20px);color:var(--muted);line-height:1.35}
 .reach{width:min(84vw,1500px);margin-top:4.2vh;display:grid;gap:1.4vh}
-.rrow{display:grid;grid-template-columns:minmax(0,1.1fr) auto minmax(0,1.3fr);align-items:center;gap:1.4vw;border-top:1px solid var(--line);padding-top:1.4vh;text-align:left}
-.rrow small{font-size:clamp(12px,.95vw,16px);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.rrow.rf small{color:var(--accent)}
-.rrow em{font-style:normal;font-size:clamp(13px,1.05vw,18px);color:var(--muted)}.rrow.rf em{color:var(--text)}
+.rrow{display:grid;grid-template-columns:minmax(0,1.35fr) auto minmax(0,1.35fr);align-items:center;gap:1.4vw;border-top:1px solid var(--line);padding-top:1.4vh;text-align:left}
+.rrow small{font-size:clamp(12px,.95vw,16px);letter-spacing:.1em;white-space:nowrap;text-transform:uppercase;color:var(--muted)}.rrow.rf small{color:var(--accent)}
+.rrow em{font-style:normal;font-size:clamp(13px,1.05vw,18px);white-space:nowrap;color:var(--muted)}.rrow.rf em{color:var(--text)}
 .chips{display:flex;gap:.5vw}.chips i{font-style:normal;font-weight:700;font-size:clamp(12px,1vw,17px);padding:.55em 1em;border-radius:99px;border:1px solid var(--line);color:var(--muted);opacity:.35;transition:all .4s}
 .reach.on .chips i.a{opacity:1;background:rgba(46,230,197,.12);border-color:var(--accent);color:var(--accent)}
 .rs{display:flex;align-items:center;gap:3vw;margin-bottom:5vh}
@@ -225,14 +225,14 @@ h1 sup,h2 sup{font-size:.3em}
   <div class="pin">
     <div class="photo x" id="p0"><img data-embed="kiosk" alt="A local substation covered in graffiti"><div class="ov" id="p0v"></div></div>
     <div class="lay x" id="p1a"><h1 class="big">~<span id="n600">600.000</span></h1><p class="sub">local substations in Germany.</p></div>
-    <div class="lay x" id="p1b"><h2>Every substation <span class="g">requires manual labor.</span></h2>
+    <div class="lay x" id="p1b"><h2>Every substation <span class="g">requires manual labour.</span></h2>
       <div class="flow"><svg viewBox="0 0 900 290">
         <!-- power plant: hall, two stacks, cooling tower -->
-        <g fill="#1d1e23"><rect x="8" y="130" width="84" height="80" rx="5"/><rect x="24" y="78" width="14" height="52"/><rect x="50" y="94" width="14" height="36"/><path d="M96 210 L104 140 L128 140 L136 210 Z"/></g>
+        <g fill="#4b5060"><rect x="8" y="130" width="84" height="80" rx="5"/><rect x="24" y="78" width="14" height="52"/><rect x="50" y="94" width="14" height="36"/><path d="M96 210 L104 140 L128 140 L136 210 Z"/></g>
         <text x="72" y="250" text-anchor="middle" font-size="18" fill="#86868b">Power plant</text>
         <path id="l1" d="M140 165 H285" stroke="#ff5a5f" stroke-width="4"/><text x="212" y="135" text-anchor="middle" font-size="17" font-weight="700" fill="#ff5a5f">380 / 110 kV</text>
         <!-- substation: fenced yard with a transformer -->
-        <g><rect x="290" y="112" width="120" height="100" rx="6" fill="#1d1e23"/><g fill="#2a2b31"><rect x="318" y="146" width="64" height="58" rx="5"/><rect x="326" y="128" width="8" height="20"/><rect x="346" y="128" width="8" height="20"/><rect x="366" y="128" width="8" height="20"/></g></g>
+        <g><rect x="290" y="112" width="120" height="100" rx="6" fill="#4b5060"/><g fill="#737a8a"><rect x="318" y="146" width="64" height="58" rx="5"/><rect x="326" y="128" width="8" height="20"/><rect x="346" y="128" width="8" height="20"/><rect x="366" y="128" width="8" height="20"/></g></g>
         <text x="350" y="250" text-anchor="middle" font-size="18" fill="#86868b">Substation</text>
         <path id="l2" d="M414 165 H580" stroke="#ffc233" stroke-width="4"/><text x="497" y="135" text-anchor="middle" font-size="17" font-weight="700" fill="#ffc233">20 kV</text>
         <!-- local substation: a low concrete kiosk, flat roof, double door, warning sign, vents -->
@@ -243,7 +243,7 @@ h1 sup,h2 sup{font-size:.3em}
           <text x="640" y="250" text-anchor="middle" font-size="19" font-weight="800" fill="#f5f5f7">Local substation</text></g>
         <path id="l3" d="M710 165 H790" stroke="#2ee6c5" stroke-width="4"/><text x="750" y="135" text-anchor="middle" font-size="17" font-weight="700" fill="#2ee6c5">400 V</text>
         <!-- street: three small houses -->
-        <g fill="#1d1e23"><path d="M796 178 h34 v34 h-34z M792 178 l21 -18 l21 18z"/><path d="M836 168 h42 v44 h-42z M831 168 l26 -22 l26 22z"/><path d="M884 182 h30 v30 h-30z M880 182 l19 -16 l19 16z"/></g>
+        <g fill="#4b5060"><path d="M796 178 h34 v34 h-34z M792 178 l21 -18 l21 18z"/><path d="M836 168 h42 v44 h-42z M831 168 l26 -22 l26 22z"/><path d="M884 182 h30 v30 h-30z M880 182 l19 -16 l19 16z"/></g>
         <text x="853" y="250" text-anchor="middle" font-size="18" fill="#86868b">Your street</text>
         <g fill="#fff">
           <circle r="4.5"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#l1"/></animateMotion></circle>
@@ -259,7 +259,7 @@ h1 sup,h2 sup{font-size:.3em}
       <div class="trio">
         <div class="x" id="t1"><b class="red">5.112</b><span>electrical accidents in 2025</span></div>
         <div class="x" id="t2"><b>~234.000</b><span>more local substations by 2045</span></div>
-        <div class="x" id="t3"><b>8 in 10</b><span>grid technician vacancies went unfilled in 2024</span></div>
+        <div class="x" id="t3"><b>4,6 %</b><span>of medium-voltage accidents are fatal</span></div>
       </div>
     </div>
   </div>
@@ -268,7 +268,7 @@ h1 sup,h2 sup{font-size:.3em}
 <!-- 2 · Max -->
 <section class="sc" data-id="max" data-len="330" data-stops=".3,.72" data-ch="problem">
   <div class="pin">
-    <div class="top x" id="m_h"><h2>A fuse trips. <span class="g">Joule sends Max.</span></h2></div>
+    <div class="top x" id="m_h"><h2>A fuse trips. <span class="g">SAP Joule sends Max.</span></h2></div>
     <div class="stage"><div class="maxrow">
       <div class="x" id="m_tab"><div class="tablet"><div class="scr">
         <div class="jbar"><span class="gem"></span> SAP Joule · Field service</div>
@@ -306,13 +306,13 @@ h1 sup,h2 sup{font-size:.3em}
 
 <!-- 4 · the question -->
 <section class="sc" data-id="reveal" data-len="250" data-stops=".62" data-ch="solution">
-  <div class="pin"><div class="lay"><div class="rev" id="rev"><span>What</span><span>if</span><span>nobody</span><span>had</span><span>to</span><span>go</span><span class="g">inside?</span></div></div></div>
+  <div class="pin"><div class="lay"><div class="rev" id="rev"><span>What</span><span>if</span><span>Max</span><span>did</span><span>not</span><span>have</span><span>to</span><span>enter</span><span>the</span><span class="g">substation?</span></div></div></div>
 </section>
 
 <!-- 5 · retrofit -->
 <section class="sc" data-id="retro" data-len="300" data-stops=".45" data-ch="solution">
   <div class="pin">
-    <div class="top x" id="r_h"><h2>A robot lives inside the station.</h2><p class="sub">The station stays as it is.</p></div>
+    <div class="top x" id="r_h"><h2>A robot <span class="g">resides inside</span> the substation.</h2></div>
     <div class="stage" style="top:30vh;bottom:18vh"><div id="gan" class="x"><svg viewBox="0 0 1000 460">
       <defs><radialGradient id="cone" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#fff3c4" stop-opacity=".55"/><stop offset="1" stop-color="#fff3c4" stop-opacity="0"/></radialGradient></defs>
       <rect x="20" y="20" width="960" height="400" rx="14" fill="#0f1013" stroke="#26272c" stroke-width="3"/>
@@ -338,7 +338,7 @@ h1 sup,h2 sup{font-size:.3em}
 <!-- 6 · Erika -->
 <section class="sc" data-id="erika" data-len="340" data-stops=".3,.7" data-ch="solution">
   <div class="pin">
-    <div class="top x" id="e_h" style="top:10vh"><h2>Same fault. <span class="g">Joule sends a decision.</span></h2></div>
+    <div class="top x" id="e_h" style="top:10vh"><h2 style="font-size:clamp(28px,2.9vw,58px)">Same fault. <span class="g">But now SAP Joule allows for remote operations.</span></h2></div>
     <div class="stage" style="top:24vh;bottom:5vh"><div class="dash x" id="e_d">
       <div class="full dhead"><span><span class="gem" style="vertical-align:-2px"></span> SAP Joule · Station 4712 · fuse tripped</span><span class="live">● VOLTcore live</span></div>
       <div class="full jline"><span class="gem"></span><span>Joule · F3 tripped 3 times before · autonomous success predicted <b class="lo">30 %</b> · recommends <b>teleoperation</b></span></div>
@@ -363,38 +363,38 @@ h1 sup,h2 sup{font-size:.3em}
     <div class="stage x" id="l_a"><div id="learnsvg"><svg viewBox="0 0 900 330">
       <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#2ee6c5"/></marker></defs>
       <g id="sts"></g>
-      <text x="90" y="318" text-anchor="middle" font-size="17" fill="#86868b">Stations</text>
+      <text x="90" y="318" text-anchor="middle" font-size="17" fill="#86868b">Substations</text>
       <rect x="330" y="120" width="220" height="90" rx="16" fill="#0f1013" stroke="#2ee6c5" stroke-width="2"/>
-      <text x="440" y="158" text-anchor="middle" font-size="16" fill="#86868b">demonstration</text>
+      <text x="440" y="158" text-anchor="middle" font-size="16" fill="#86868b">Demonstration</text>
       <text x="440" y="190" text-anchor="middle" font-size="28" font-weight="800" fill="#f5f5f7" id="demoN">#1.205</text>
       <rect x="650" y="95" width="230" height="140" rx="20" fill="#08221e" stroke="#2ee6c5" stroke-width="2"/>
-      <text x="765" y="150" text-anchor="middle" font-size="16" fill="#86868b">cloud</text>
+      <text x="765" y="150" text-anchor="middle" font-size="16" fill="#86868b">Cloud</text>
       <text x="765" y="185" text-anchor="middle" font-size="25" font-weight="800" fill="#f5f5f7">VLA model</text>
       <path d="M180 165 H322" stroke="#2ee6c5" stroke-width="3" marker-end="url(#ar)"/>
       <path d="M555 165 H642" stroke="#2ee6c5" stroke-width="3" marker-end="url(#ar)"/>
       <path d="M765 240 C765 300, 300 300, 150 270" fill="none" stroke="#2ee6c5" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#ar)"/>
-      <text x="470" y="328" text-anchor="middle" font-size="17" fill="#86868b">update to every station</text>
+      <text x="470" y="328" text-anchor="middle" font-size="17" fill="#86868b">Update to every substation</text>
       <circle r="6" fill="#fff"><animateMotion dur="1.6s" repeatCount="indefinite" path="M180 165 H322"/></circle>
       <circle r="6" fill="#fff"><animateMotion dur="1.6s" begin=".8s" repeatCount="indefinite" path="M555 165 H642"/></circle>
     </svg></div></div>
-    <div class="top x" id="l_h2"><h2>Autonomy is <span class="g">earned</span> and chosen.</h2><p class="sub">Per task, every time. The operator keeps authority and liability.</p></div>
+    <div class="top x" id="l_h2"><h2>Autonomy needs to be <span class="g">actively tested and trained.</span></h2></div>
     <div class="stage x" id="l_b" style="top:34vh;flex-direction:column"><div class="track"><div class="rail"><i id="fill"></i></div>
       <div class="lvl" id="lv1"><small>Today</small><b>Teleoperated</b><span>A person drives every move</span></div>
       <div class="lvl" id="lv2"><small>Next</small><b>Supervised</b><span>The robot proposes, a person approves</span></div>
       <div class="lvl" id="lv3"><small>Then</small><b>Autonomous</b><span>Routine runs alone</span></div>
     </div>
-    <p class="back x" id="l_c"><span class="g">↔</span> Not a one-way road. A critical fault, a new fuse type, a bad prediction: the operator drops back a level. Tomorrow the routine runs alone again.</p></div>
+    </div>
   </div>
 </section>
 
 <!-- 8 · robot-first new stations -->
 <section class="sc" data-id="market" data-len="300" data-stops=".6" data-ch="market">
   <div class="pin">
-    <div class="top x" id="k_h"><h2>The grid is being rebuilt.<br><span class="g">The people are leaving.</span></h2></div>
+    <div class="top x" id="k_h"><h2>The grid will need to be transformed.<br><span class="g">We lack the skilled technicians needed.</span></h2></div>
     <div class="stage" style="top:40vh"><div class="stats">
       <div class="stat x" id="s1"><b class="g">&gt;€<span class="cnt" data-to="235">0</span>bn</b><span>grid investment by 2045</span></div>
       <div class="stat x" id="s2"><b><span class="cnt" data-to="93">0</span>%</b><span>of operators expect to double capacity</span></div>
-      <div class="stat x" id="s3"><b>50–<span class="cnt" data-from="50" data-to="80">50</span>%</b><span>of today's grid assets to build or replace by 2045</span></div>
+      <div class="stat x" id="s3"><b>50-<span class="cnt" data-from="50" data-to="80">50</span>%</b><span>of today's grid assets to build or replace by 2045</span></div>
       <div class="stat x" id="s4"><b><span class="cnt" data-to="242">0</span> days</b><span>to fill a skilled-trade job</span></div>
     </div></div>
   </div>
@@ -418,8 +418,8 @@ h1 sup,h2 sup{font-size:.3em}
   <path d="M581 0 V665" stroke="#26272c" stroke-width="2" stroke-dasharray="6 8"/>
 
   <!-- captions -->
-  <text x="34" y="46" font-size="15" font-weight="700" letter-spacing="2.5" fill="#86868b">OLD STATION · RETROFITTED</text>
-  <text x="612" y="46" font-size="15" font-weight="700" letter-spacing="2.5" fill="#2ee6c5">NEW STATION · ROBOT-FIRST</text>
+  <text x="34" y="46" font-size="15" font-weight="700" letter-spacing="2.5" fill="#86868b">CURRENT SUBSTATIONS · RETROFITTED</text>
+  <text x="612" y="46" font-size="15" font-weight="700" letter-spacing="2.5" fill="#2ee6c5">NEW SUBSTATIONS · ROBOT-FIRST</text>
 
   <!-- ===== LEFT: the retrofitted kiosk, front wall cut open ===== -->
   <g>
@@ -513,7 +513,7 @@ h1 sup,h2 sup{font-size:.3em}
   </g>
   </g>
 </svg><div class="ov" id="n_ov"></div></div>
-    <div class="top x" id="n_a"><h2>Build the next ~234.000 <span class="g">for the robot.</span></h2><p class="sub"><b>New stations built robot-first, old ones retrofitted, in parallel.</b></p></div>
+    <div class="top x" id="n_a"><h2>Design the next substations <span class="g">robot-first.</span></h2></div>
   </div>
 </section>
 
@@ -521,14 +521,14 @@ h1 sup,h2 sup{font-size:.3em}
 <section class="sc" data-id="rux" data-len="300" data-stops=".5" data-ch="market">
   <div class="pin">
     <div class="lay x" id="n_b">
-      <h2>Robot UX, <span class="g">not human UX.</span></h2>
+      <h2><span class="g">Robot UX,</span> not human UX.</h2>
       <div class="rux">
-        <div><svg viewBox="0 0 100 100"><circle cx="30" cy="50" r="20" fill="#24262c"/><circle cx="30" cy="50" r="6" fill="#86868b"/><path d="M52 50 h10" stroke="#4a4a50" stroke-width="3"/><rect x="62" y="34" width="32" height="32" rx="6" fill="#08221e" stroke="#2ee6c5" stroke-width="3"/><rect x="72" y="44" width="12" height="12" fill="#2ee6c5"/></svg><b>Guided</b><span>Square drives and lead-in carriers. The part guides the tool in.</span></div>
-        <div><svg viewBox="0 0 100 100"><rect x="14" y="20" width="72" height="60" rx="8" fill="#08221e" stroke="#2ee6c5" stroke-width="3"/><g fill="#2ee6c5"><rect x="24" y="30" width="10" height="10"/><rect x="38" y="30" width="10" height="10"/><rect x="24" y="44" width="10" height="10"/><rect x="52" y="44" width="10" height="10"/><rect x="38" y="58" width="10" height="10"/><rect x="66" y="30" width="10" height="10"/><rect x="66" y="58" width="10" height="10"/></g></svg><b>Tagged</b><span>A machine-readable tag on every part: what it is, what state it is in.</span></div>
-        <div><svg viewBox="0 0 100 100"><rect x="10" y="14" width="80" height="5" fill="#f5f5f7"/><rect x="18" y="19" width="4" height="70" fill="#c6cad2"/><rect x="78" y="19" width="4" height="70" fill="#c6cad2"/><g fill="#1a6357"><rect x="28" y="34" width="12" height="22" rx="2"/><rect x="44" y="34" width="12" height="22" rx="2"/><rect x="60" y="34" width="12" height="22" rx="2" fill="#2ee6c5"/><rect x="28" y="62" width="12" height="22" rx="2"/><rect x="44" y="62" width="12" height="22" rx="2"/><rect x="60" y="62" width="12" height="22" rx="2"/></g></svg><b>One plane</b><span>Every part faces the rails. No corners, no crouching, no ladder.</span></div>
+        <div><svg viewBox="0 0 100 100"><circle cx="30" cy="50" r="20" fill="#24262c"/><circle cx="30" cy="50" r="6" fill="#86868b"/><path d="M52 50 h10" stroke="#4a4a50" stroke-width="3"/><rect x="62" y="34" width="32" height="32" rx="6" fill="#08221e" stroke="#2ee6c5" stroke-width="3"/><rect x="44" y="44" width="12" height="12" rx="2" fill="#2ee6c5"><animate attributeName="x" values="44;44;72;72;44" keyTimes="0;.2;.5;.8;1" dur="4s" repeatCount="indefinite"/></rect></svg><b>Guided</b><span>Square drives and lead-in carriers. The part guides the tool in.</span></div>
+        <div><svg viewBox="0 0 100 100"><rect x="14" y="20" width="72" height="60" rx="8" fill="#08221e" stroke="#2ee6c5" stroke-width="3"/><g fill="#2ee6c5"><rect x="24" y="30" width="10" height="10"/><rect x="38" y="30" width="10" height="10"/><rect x="24" y="44" width="10" height="10"/><rect x="52" y="44" width="10" height="10"/><rect x="38" y="58" width="10" height="10"/><rect x="66" y="30" width="10" height="10"/><rect x="66" y="58" width="10" height="10"/></g><rect x="14" y="20" width="72" height="3" fill="#2ee6c5" opacity=".85"><animate attributeName="y" values="20;77;77;20" keyTimes="0;.45;.55;1" dur="4s" repeatCount="indefinite"/></rect></svg><b>Tagged</b><span>A machine-readable tag on every part: what it is, what state it is in.</span></div>
+        <div><svg viewBox="0 0 100 100"><rect x="10" y="14" width="80" height="5" fill="#f5f5f7"/><rect x="18" y="19" width="4" height="70" fill="#c6cad2"/><rect x="78" y="19" width="4" height="70" fill="#c6cad2"/><g fill="#1a6357"><rect x="28" y="34" width="12" height="22" rx="2"/><rect x="44" y="34" width="12" height="22" rx="2"/><rect x="60" y="34" width="12" height="22" rx="2" fill="#2ee6c5"/><rect x="28" y="62" width="12" height="22" rx="2"/><rect x="44" y="62" width="12" height="22" rx="2"/><rect x="60" y="62" width="12" height="22" rx="2"/></g><rect x="22" y="31" width="56" height="3" fill="#f5f5f7"><animate attributeName="y" values="31;31;59;59;31" keyTimes="0;.3;.5;.8;1" dur="4s" repeatCount="indefinite"/></rect></svg><b>One plane</b><span>Every part faces the rails. No corners, no crouching, no ladder.</span></div>
         <div><svg viewBox="0 0 100 100"><rect x="14" y="26" width="46" height="48" rx="6" fill="#0b2a26" stroke="#1a6357" stroke-width="3"/><rect x="24" y="36" width="26" height="28" rx="3" fill="#2ee6c5"><animate attributeName="x" values="24;24;60;60;24" keyTimes="0;.3;.5;.8;1" dur="4s" repeatCount="indefinite"/></rect><path d="M66 50 h20 m-6 -6 l6 6 l-6 6" fill="none" stroke="#86868b" stroke-width="3"/></svg><b>Modular</b><span>Every part is a swappable module. The robot restocks its own spares.</span></div>
       </div>
-      <div class="reach" id="reach"><div class="rrow"><small>Old station · retrofitted</small><div class="chips"><i class="a" style="transition-delay:0.09s">Inspect</i><i class="a" style="transition-delay:0.18s">Switch</i><i class="a" style="transition-delay:0.27s">Reset</i><i>Replace</i><i>Clean</i><i>Rewire</i></div><em>routine alone · the rest is manual</em></div><div class="rrow rf"><small>New station · robot-first</small><div class="chips"><i class="a" style="transition-delay:0.09s">Inspect</i><i class="a" style="transition-delay:0.18s">Switch</i><i class="a" style="transition-delay:0.27s">Reset</i><i class="a" style="transition-delay:0.36s">Replace</i><i class="a" style="transition-delay:0.45s">Clean</i><i class="a" style="transition-delay:0.54s">Rewire</i></div><em>same brain · almost everything autonomous</em></div></div>
+      <div class="reach" id="reach"><div class="rrow"><small>Current substations · retrofitted</small><div class="chips"><i class="a" style="transition-delay:0.09s">Inspect</i><i class="a" style="transition-delay:0.18s">Switch</i><i class="a" style="transition-delay:0.27s">Reset</i><i>Replace</i><i>Clean</i><i>Rewire</i></div><em>routine alone · the rest is manual</em></div><div class="rrow rf"><small>New substations · robot-first</small><div class="chips"><i class="a" style="transition-delay:0.09s">Inspect</i><i class="a" style="transition-delay:0.18s">Switch</i><i class="a" style="transition-delay:0.27s">Reset</i><i class="a" style="transition-delay:0.36s">Replace</i><i class="a" style="transition-delay:0.45s">Clean</i><i class="a" style="transition-delay:0.54s">Rewire</i></div><em>same brain · almost everything autonomous</em></div></div>
     </div>
   </div>
 </section>
@@ -538,15 +538,15 @@ h1 sup,h2 sup{font-size:.3em}
 <!-- 10 · competition -->
 <section class="sc" data-id="comp" data-len="300" data-stops=".6" data-ch="market">
   <div class="pin">
-    <div class="top x" id="c_h"><h2 style="font-size:clamp(34px,4vw,74px)">Nobody repairs <span class="g">without a person inside.</span></h2></div>
+    <div class="top x" id="c_h"><h2 style="font-size:clamp(34px,4vw,74px)">The market for autonomous operations<br><span class="g">offers great potential.</span></h2></div>
     <div class="stage" style="top:28vh;bottom:6vh"><div class="mtx x" id="c_t"><svg viewBox="0 0 1000 600">
       <defs><marker id="axar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#8e8e93"/></marker>
         <radialGradient id="usglow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2ee6c5" stop-opacity=".16"/><stop offset="1" stop-color="#2ee6c5" stop-opacity="0"/></radialGradient></defs>
       <rect x="0" y="0" width="1000" height="600" fill="#f5f5f7"/>
       <ellipse cx="775" cy="185" rx="220" ry="130" fill="url(#usglow)"/>
       <path d="M150 520 V62" stroke="#c7c7cc" stroke-width="2.5" marker-end="url(#axar)"/><path d="M150 520 H948" stroke="#c7c7cc" stroke-width="2.5" marker-end="url(#axar)"/>
-      <g font-size="17" font-weight="700" fill="#6e6e73" letter-spacing="1.5">
-        <text x="136" y="48" text-anchor="end" font-size="14.5" letter-spacing="1">AUTONOMOUS</text>
+      <g font-size="15" font-weight="700" fill="#6e6e73" letter-spacing="1">
+        <text x="136" y="48" text-anchor="end">AUTONOMOUS</text>
         <text x="134" y="495" text-anchor="end">HUMAN-</text><text x="134" y="515" text-anchor="end">CONTROLLED</text>
         <text x="150" y="562" text-anchor="start">OBSERVATION</text><text x="948" y="562" text-anchor="end">EXECUTION</text>
       </g>
@@ -564,7 +564,7 @@ h1 sup,h2 sup{font-size:.3em}
 <section class="sc" data-id="team" data-len="300" data-stops=".5" data-ch="team">
   <div class="pin">
     <div class="lay" id="t_l">
-      <div class="x qhead" id="t_h"><h2>The team <span class="g">behind it.</span></h2></div>
+      <div class="x qhead" id="t_h"><h2>The team <span class="g">behind VOLTcore.</span></h2></div>
       <div class="teamrow">
         <div class="mem x"><img data-embed="alex" alt=""><b>Alexander Spude</b><span>M.Sc. Management and Technology</span></div>
         <div class="mem x"><img data-embed="caroline" alt=""><b>Caroline Wendlandt</b><span>B.Sc. Electrical Engineering</span></div>
@@ -842,7 +842,7 @@ D.learn=p=>{
   io('l_h1',p,-.3,-.03,.4,.5,40);io('l_a',p,-.2,.15,.4,.5,60);
   io('l_h2',p,.46,.58,null,null,40);io('l_b',p,.48,.6,null,null,60);
   const f=R(p,.55,.78);$('fill').style.width=(f*100).toFixed(1)+'%';
-  $('lv1').classList.toggle('on',p>.5);$('lv2').classList.toggle('on',f>.48);$('lv3').classList.toggle('on',f>.97);io('l_c',p,.7,.8,null,null,30);};
+  $('lv1').classList.toggle('on',p>.5);$('lv2').classList.toggle('on',f>.48);$('lv3').classList.toggle('on',f>.97);};
 
 D.new=p=>{
   const vw=innerWidth,vh=innerHeight,fh=.6*vh,fw=fh*1162/665,s0=Math.max(vw/fw,vh/fh)*1.02,z=R(p,-.4,.28);
