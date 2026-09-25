@@ -199,9 +199,6 @@ h1 sup,h2 sup{font-size:.3em}
 .prev small{color:var(--muted);font-size:var(--small);letter-spacing:.1em;text-transform:uppercase;margin-right:.6vw}
 .prev i{display:flex;opacity:.78}
 .prev img{height:calc(clamp(20px,2.1vw,40px)*var(--k,1));width:auto;display:block}
-.tlogo{width:min(20vw,320px);margin-bottom:6vh}
-.ctc{display:inline-block;margin-top:8vh;font-size:clamp(16px,1.35vw,24px);font-weight:600;color:#062b25;background:var(--grad);border-radius:99px;padding:.75em 2.1em;letter-spacing:-.01em}
-.cnames{font-size:clamp(12px,.95vw,16px);color:var(--dim);margin-top:6vh;letter-spacing:.02em}
 
 </style></head><body>
 
@@ -575,17 +572,6 @@ h1 sup,h2 sup{font-size:.3em}
   </div>
 </section>
 
-<!-- 12 · final accord + contact -->
-<section class="sc" data-id="contact" data-len="280" data-stops=".55" data-ch="team">
-  <div class="pin">
-    <div class="lay" id="f_l">
-      <img class="tlogo x" id="f_0" data-embed="logo" alt="VOLTcore">
-      <h1 class="big x" id="f_1" style="font-size:clamp(40px,5.4vw,104px);line-height:1.04">Rethinking<br>energy infrastructure.</h1>
-      <h2 class="big x" id="f_2" style="margin-top:2vh;font-size:clamp(40px,5.4vw,104px);line-height:1.04;font-weight:800;letter-spacing:-.045em"><span class="g">Robot-first.</span></h2>
-      <div class="x" id="f_3"><span class="ctc">Contact us</span><p class="cnames">Alexander Spude · Caroline Wendlandt · Kacper Chłodny · Lukas Raymann · Syrine Torjmene</p></div>
-    </div>
-  </div>
-</section>
 </main>
 
 
@@ -864,7 +850,6 @@ D.comp=p=>{io('c_h',p,-.3,-.03,null,null,40);io('c_t',p,-.15,.1,null,null,60);
 
 const mems=[...document.querySelectorAll('.mem')];
 D.team=p=>{io('t_h',p,-.3,-.03,null,null,40);mems.forEach((m,k)=>io(m,p,-.06+k*.05,.1+k*.05,null,null,60));io('t_p',p,.24,.36,null,null,30);$('t_l').style.pointerEvents='none';};
-D.contact=p=>{io('f_0',p,-.3,-.05,null,null,30,.06);io('f_1',p,-.2,.05,null,null,50);io('f_2',p,.02,.22,null,null,50);io('f_3',p,.16,.34,null,null,40);$('f_l').style.pointerEvents='none';};
 
 // ============================================================ the zap: plays by itself when its stop is reached going forward
 const gcv=$('gcv'),gctx=gcv.getContext('2d');let gstate='idle',gT=0,onArrive=null,gph=0;const cam={x:0,y:1.6,z:0,yaw:0,pitch:0};
@@ -935,7 +920,7 @@ function frame(ts){now=(ts-t0)/1000;const dt=Math.min(0.05,(ts-last)/1000);last=
   // nav + progress
   const mid=y+vh*.5;let ch='';for(const g of geo)if(mid>=g.top)ch=g.ch;
   tabs.forEach(a=>a.classList.toggle('on',a.dataset.go===ch));
-  const gl=geo[geo.length-1];nav.style.opacity=geo.length?(R((y-geo[0].top)/geo[0].range,.55,.95)*(1-R((y-gl.top)/gl.range,-.05,.2))).toFixed(3):0;nav.style.pointerEvents=nav.style.opacity>.05?'':'none';
+  nav.style.opacity=geo.length?R((y-geo[0].top)/geo[0].range,.55,.95).toFixed(3):0;nav.style.pointerEvents=nav.style.opacity>.05?'':'none';
   bar.style.width=(stops.length?Math.min(100,y/stops[stops.length-1]*100):0).toFixed(2)+'%';
   requestAnimationFrame(frame);}
 buildWorld();resetGame();resetErika();layout();
