@@ -125,10 +125,6 @@ h1 sup,h2 sup{font-size:.3em}
 .sugg{border:1px dashed var(--dim);border-radius:10px;padding:1vh .8vw;font-size:clamp(13px,1vw,16px);color:var(--muted);transition:all .3s}
 .sugg.on{border-color:var(--accent);color:var(--text)}
 .vs{margin-top:auto;border-top:1px solid var(--line);padding-top:1.2vh;font-size:clamp(14px,1.2vw,20px);line-height:1.4;color:var(--text);opacity:0;transform:translateY(8px);transition:all .5s}.vs.on{opacity:1;transform:none}.vs b{color:var(--accent)}
-.mail{position:absolute;right:-2vw;top:-4vh;width:min(24vw,370px);background:#f5f5f7;color:#14181d;border-radius:14px;padding:1.5vh 1.1vw;box-shadow:0 24px 60px rgba(0,0,0,.7);font-size:clamp(13px,1.05vw,17px);opacity:0;transform:translateY(-16px);transition:all .5s}
-.mail.on{opacity:1;transform:none}
-.mail .from{color:#6e6e73;font-size:.85em;margin-bottom:.3em}
-.mail b{display:block}
 .illu{position:absolute;right:0;top:-5vh}
 
 /* learning */
@@ -175,7 +171,7 @@ h1 sup,h2 sup{font-size:.3em}
 .stat>span{display:block;font-size:clamp(16px,1.4vw,25px);color:var(--muted);margin-top:1.5vh;font-weight:500;line-height:1.3}
 
 /* competition */
-.mtx{width:min(74vw,1220px,calc(66vh*1000/600))}.mtx>svg{overflow:hidden;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.55)}.mtx .pt{opacity:0;transform-box:fill-box;transform-origin:center}.mtx .us{filter:drop-shadow(0 0 0 rgba(46,230,197,0))}
+.mtx{width:min(74vw,1220px,calc(62vh*1000/600))}.mtx>svg{overflow:hidden;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.55)}.mtx .pt{opacity:0;transform-box:fill-box;transform-origin:center}
 .cov{width:min(80vw,1360px);border-collapse:separate;border-spacing:0 1vh}
 .cov th{font-size:var(--small);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:0 .5vw 1vh;text-align:center}
 .cov td{background:var(--panel);padding:1.8vh 1vw;text-align:center;font-size:clamp(20px,1.9vw,34px)}
@@ -216,7 +212,7 @@ h1 sup,h2 sup{font-size:.3em}
 <section class="sc" data-id="hero" data-len="190" data-stops="0" data-ch="">
   <div class="pin"><div class="lay" id="heroL">
     <div class="hlogo"><img data-embed="logo" alt="VOLTcore"><svg class="ldot" viewBox="0 0 3557 630" aria-hidden="true"><defs><filter id="lglow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="14"/></filter></defs><path id="ltrace" d="M0 166 H407 V629" fill="none"/><circle r="44" fill="#2ee6c5" opacity=".6" filter="url(#lglow)"><animateMotion dur="2.8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.62;1" calcMode="linear"><mpath href="#ltrace"/></animateMotion></circle><circle r="19" fill="#2ee6c5"><animateMotion dur="2.8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.62;1" calcMode="linear"><mpath href="#ltrace"/></animateMotion><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.6;.66;1" dur="2.8s" repeatCount="indefinite"/></circle></svg></div>
-    <p class="htag">Rethinking energy infrastructure. <span class="g">Robot first.</span></p>
+    <p class="htag">Rethinking energy infrastructure. <span class="g">Robot-first.</span></p>
   </div></div>
 </section>
 
@@ -255,7 +251,7 @@ h1 sup,h2 sup{font-size:.3em}
         </g></svg></div>
     </div>
     <div class="lay" id="p1c">
-      <h2 class="x" id="p1h">More risk. More work. <span class="g">Fewer people.</span></h2>
+      <h2 class="x" id="p1h">More work. <span class="g">More safety risk.</span></h2>
       <div class="trio">
         <div class="x" id="t1"><b class="red">5.112</b><span>electrical accidents in 2025</span></div>
         <div class="x" id="t2"><b>~234.000</b><span>more local substations by 2045</span></div>
@@ -299,7 +295,7 @@ h1 sup,h2 sup{font-size:.3em}
   <div class="pin">
     <canvas id="gcv"></canvas>
     <div class="botfade" id="zfade"></div><div class="shade" id="zshade"></div>
-    <div class="lay x" id="zcap"><h2 class="xl">Max arrives.<br><span class="g">Gear on. Rules followed.</span></h2></div>
+    <div class="lay x" id="zcap"><h2>Max arrives.<br><span class="g">Gear on. Rules followed.</span></h2></div>
     <div class="lay dead" id="dead"><h1 class="big">Max is zapped.</h1><p class="sub">The typical victim is a <b>qualified electrician</b> who followed the rules.</p></div>
   </div>
 </section>
@@ -317,14 +313,14 @@ h1 sup,h2 sup{font-size:.3em}
       <defs><radialGradient id="cone" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#fff3c4" stop-opacity=".55"/><stop offset="1" stop-color="#fff3c4" stop-opacity="0"/></radialGradient></defs>
       <rect x="20" y="20" width="960" height="400" rx="14" fill="#0f1013" stroke="#26272c" stroke-width="3"/>
       <rect x="60" y="70" width="180" height="300" rx="6" fill="#26251f"/><rect x="80" y="100" width="140" height="60" rx="4" fill="#ffc233" opacity=".75"/><rect x="135" y="190" width="30" height="120" rx="4" fill="#4a4a50"/>
-      <text x="150" y="402" text-anchor="middle" font-size="18" fill="#86868b">20 kV switch</text>
+      <text x="150" y="402" text-anchor="middle" font-size="18" fill="#86868b">20 kV Switch</text>
       <rect x="290" y="120" width="190" height="250" rx="10" fill="#24262c"/><g fill="#24262c"><rect x="310" y="90" width="14" height="30"/><rect x="378" y="90" width="14" height="30"/><rect x="446" y="90" width="14" height="30"/></g>
       <text x="385" y="402" text-anchor="middle" font-size="18" fill="#86868b">Transformer</text>
       <rect x="530" y="70" width="420" height="300" rx="6" fill="#0b2a26"/>
       <g fill="#1a6357"><rect x="560" y="100" width="44" height="70" rx="4"/><rect x="624" y="100" width="44" height="70" rx="4"/><rect x="688" y="100" width="44" height="70" rx="4" fill="#ff5a5f"><animate attributeName="fill" values="#ff5a5f;#ff5a5f;#2ee6c5;#2ee6c5;#ff5a5f" keyTimes="0;.2;.28;.95;1" dur="9s" repeatCount="indefinite"/></rect><rect x="752" y="100" width="44" height="70" rx="4"/><rect x="816" y="100" width="44" height="70" rx="4"/><rect x="880" y="100" width="44" height="70" rx="4"/>
       <rect x="560" y="190" width="44" height="70" rx="4"/><rect x="624" y="190" width="44" height="70" rx="4"/><rect x="688" y="190" width="44" height="70" rx="4"/><rect x="752" y="190" width="44" height="70" rx="4"/><rect x="816" y="190" width="44" height="70" rx="4"/><rect x="880" y="190" width="44" height="70" rx="4"/>
       <rect x="560" y="280" width="44" height="70" rx="4"/><rect x="624" y="280" width="44" height="70" rx="4"/><rect x="688" y="280" width="44" height="70" rx="4"/><rect x="752" y="280" width="44" height="70" rx="4"/><rect x="816" y="280" width="44" height="70" rx="4"/><rect x="880" y="280" width="44" height="70" rx="4"/></g>
-      <text x="740" y="402" text-anchor="middle" font-size="18" fill="#86868b">400 V fuses</text>
+      <text x="740" y="402" text-anchor="middle" font-size="18" fill="#86868b">400 V Fuses</text>
       <rect x="32" y="30" width="8" height="380" fill="#c6cad2"/><rect x="960" y="30" width="8" height="380" fill="#c6cad2"/>
       <rect x="32" y="0" width="936" height="8" fill="#f5f5f7"><animate attributeName="y" values="120;120;300;300;220;220;120" keyTimes="0;.2;.38;.52;.7;.84;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1"/></rect>
       <g><animateTransform attributeName="transform" type="translate" values="710,120;710,120;150,300;150,300;385,220;385,220;710,120" keyTimes="0;.2;.38;.52;.7;.84;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1"/>
@@ -338,8 +334,8 @@ h1 sup,h2 sup{font-size:.3em}
 <!-- 6 · Erika -->
 <section class="sc" data-id="erika" data-len="340" data-stops=".3,.7" data-ch="solution">
   <div class="pin">
-    <div class="top x" id="e_h" style="top:10vh"><h2 style="font-size:clamp(28px,2.9vw,58px)">Same fault. <span class="g">But now SAP Joule allows for remote operations.</span></h2></div>
-    <div class="stage" style="top:24vh;bottom:5vh"><div class="dash x" id="e_d">
+    <div class="top x" id="e_h" style="top:9vh"><h2 style="text-wrap:balance">Same fault. <span class="g">But now SAP Joule allows for remote operations.</span></h2></div>
+    <div class="stage" style="top:29vh;bottom:2vh"><div class="dash x" id="e_d">
       <div class="full dhead"><span><span class="gem" style="vertical-align:-2px"></span> SAP Joule · Station 4712 · fuse tripped</span><span class="live">● VOLTcore live</span></div>
       <div class="full jline"><span class="gem"></span><span>Joule · F3 tripped 3 times before · autonomous success predicted <b class="lo">30 %</b> · recommends <b>teleoperation</b></span></div>
       <div class="full choice"><div class="opt" id="o1"><b>Teleoperate</b><small>Recommended</small></div><div class="opt" id="o2"><b>Supervise</b><small>Robot proposes · 71 % predicted</small></div><div class="opt" id="o3"><b>Autonomous</b><small>Robot acts · <em>30 % predicted</em></small></div></div>
@@ -351,7 +347,6 @@ h1 sup,h2 sup{font-size:.3em}
         <div class="sugg" id="sg">Suggested: reset F3 to ON</div>
         <div class="vs" id="vs"><span class="m">Max:</span> 1 h 05 min in the van<br><span class="m">Erika:</span> <b>4 min 51 s</b> from a chair</div>
       </div>
-      <div class="mail" id="mail"><div class="from">Outlook · HR</div><b>Sick leave: Max Mustermann</b>Please reassign his open jobs.</div>
     </div></div>
   </div>
 </section>
@@ -367,21 +362,21 @@ h1 sup,h2 sup{font-size:.3em}
       <rect x="330" y="120" width="220" height="90" rx="16" fill="#0f1013" stroke="#2ee6c5" stroke-width="2"/>
       <text x="440" y="158" text-anchor="middle" font-size="16" fill="#86868b">Demonstration</text>
       <text x="440" y="190" text-anchor="middle" font-size="28" font-weight="800" fill="#f5f5f7" id="demoN">#1.205</text>
-      <rect x="650" y="95" width="230" height="140" rx="20" fill="#08221e" stroke="#2ee6c5" stroke-width="2"/>
-      <text x="765" y="150" text-anchor="middle" font-size="16" fill="#86868b">Cloud</text>
-      <text x="765" y="185" text-anchor="middle" font-size="25" font-weight="800" fill="#f5f5f7">VLA model</text>
+      <rect x="640" y="95" width="250" height="140" rx="20" fill="#08221e" stroke="#2ee6c5" stroke-width="2"/>
+      <text x="765" y="136" text-anchor="middle" font-size="16" fill="#86868b">Cloud</text>
+      <text x="765" y="176" text-anchor="middle" font-size="18" font-weight="800" fill="#f5f5f7">Vision–Language–Action<tspan x="765" dy="24">model (VLA)</tspan></text>
       <path d="M180 165 H322" stroke="#2ee6c5" stroke-width="3" marker-end="url(#ar)"/>
-      <path d="M555 165 H642" stroke="#2ee6c5" stroke-width="3" marker-end="url(#ar)"/>
+      <path d="M555 165 H632" stroke="#2ee6c5" stroke-width="3" marker-end="url(#ar)"/>
       <path d="M765 240 C765 300, 300 300, 150 270" fill="none" stroke="#2ee6c5" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#ar)"/>
       <text x="470" y="328" text-anchor="middle" font-size="17" fill="#86868b">Update to every substation</text>
       <circle r="6" fill="#fff"><animateMotion dur="1.6s" repeatCount="indefinite" path="M180 165 H322"/></circle>
-      <circle r="6" fill="#fff"><animateMotion dur="1.6s" begin=".8s" repeatCount="indefinite" path="M555 165 H642"/></circle>
+      <circle r="6" fill="#fff"><animateMotion dur="1.6s" begin=".8s" repeatCount="indefinite" path="M555 165 H632"/></circle>
     </svg></div></div>
     <div class="top x" id="l_h2"><h2>Autonomy needs to be <span class="g">actively tested and trained.</span></h2></div>
     <div class="stage x" id="l_b" style="top:34vh;flex-direction:column"><div class="track"><div class="rail"><i id="fill"></i></div>
-      <div class="lvl" id="lv1"><small>Today</small><b>Teleoperated</b><span>A person drives every move</span></div>
-      <div class="lvl" id="lv2"><small>Next</small><b>Supervised</b><span>The robot proposes, a person approves</span></div>
-      <div class="lvl" id="lv3"><small>Then</small><b>Autonomous</b><span>Routine runs alone</span></div>
+      <div class="lvl" id="lv1"><small>Today</small><b>Teleoperated</b><span>A human steers every action</span></div>
+      <div class="lvl" id="lv2"><small>Next</small><b>Supervised</b><span>The robot proposes an action, a human approves</span></div>
+      <div class="lvl" id="lv3"><small>In the Future</small><b>Autonomous</b><span>A robot operates autonomously</span></div>
     </div>
     </div>
   </div>
@@ -513,7 +508,7 @@ h1 sup,h2 sup{font-size:.3em}
   </g>
   </g>
 </svg><div class="ov" id="n_ov"></div></div>
-    <div class="top x" id="n_a"><h2>Design the next substations <span class="g">robot-first.</span></h2></div>
+    <div class="top x" id="n_a"><h2>Designing the next substations <span class="g" style="white-space:nowrap">robot-first.</span></h2></div>
   </div>
 </section>
 
@@ -523,7 +518,7 @@ h1 sup,h2 sup{font-size:.3em}
     <div class="lay x" id="n_b">
       <h2><span class="g">Robot UX,</span> not human UX.</h2>
       <div class="rux">
-        <div><svg viewBox="0 0 100 100"><circle cx="30" cy="50" r="20" fill="#24262c"/><circle cx="30" cy="50" r="6" fill="#86868b"/><path d="M52 50 h10" stroke="#4a4a50" stroke-width="3"/><rect x="62" y="34" width="32" height="32" rx="6" fill="#08221e" stroke="#2ee6c5" stroke-width="3"/><rect x="44" y="44" width="12" height="12" rx="2" fill="#2ee6c5"><animate attributeName="x" values="44;44;72;72;44" keyTimes="0;.2;.5;.8;1" dur="4s" repeatCount="indefinite"/></rect></svg><b>Guided</b><span>Square drives and lead-in carriers. The part guides the tool in.</span></div>
+        <div><svg viewBox="0 0 100 100"><circle cx="30" cy="50" r="20" fill="#24262c"/><circle cx="30" cy="50" r="6" fill="#86868b"/><path d="M52 50 h10" stroke="#4a4a50" stroke-width="3"/><rect x="62" y="34" width="32" height="32" rx="6" fill="#08221e" stroke="#2ee6c5" stroke-width="3"/><rect x="44" y="44" width="12" height="12" rx="2" fill="#2ee6c5"><animate attributeName="x" values="44;44;72;72;44" keyTimes="0;.2;.5;.8;1" dur="4s" repeatCount="indefinite"/></rect></svg><b>Guided</b><span>Square drives and lead-in carriers. The parts guide and support the robot.</span></div>
         <div><svg viewBox="0 0 100 100"><rect x="14" y="20" width="72" height="60" rx="8" fill="#08221e" stroke="#2ee6c5" stroke-width="3"/><g fill="#2ee6c5"><rect x="24" y="30" width="10" height="10"/><rect x="38" y="30" width="10" height="10"/><rect x="24" y="44" width="10" height="10"/><rect x="52" y="44" width="10" height="10"/><rect x="38" y="58" width="10" height="10"/><rect x="66" y="30" width="10" height="10"/><rect x="66" y="58" width="10" height="10"/></g><rect x="14" y="20" width="72" height="3" fill="#2ee6c5" opacity=".85"><animate attributeName="y" values="20;77;77;20" keyTimes="0;.45;.55;1" dur="4s" repeatCount="indefinite"/></rect></svg><b>Tagged</b><span>A machine-readable tag on every part: what it is, what state it is in.</span></div>
         <div><svg viewBox="0 0 100 100"><rect x="10" y="14" width="80" height="5" fill="#f5f5f7"/><rect x="18" y="19" width="4" height="70" fill="#c6cad2"/><rect x="78" y="19" width="4" height="70" fill="#c6cad2"/><g fill="#1a6357"><rect x="28" y="34" width="12" height="22" rx="2"/><rect x="44" y="34" width="12" height="22" rx="2"/><rect x="60" y="34" width="12" height="22" rx="2" fill="#2ee6c5"/><rect x="28" y="62" width="12" height="22" rx="2"/><rect x="44" y="62" width="12" height="22" rx="2"/><rect x="60" y="62" width="12" height="22" rx="2"/></g><rect x="22" y="31" width="56" height="3" fill="#f5f5f7"><animate attributeName="y" values="31;31;59;59;31" keyTimes="0;.3;.5;.8;1" dur="4s" repeatCount="indefinite"/></rect></svg><b>One plane</b><span>Every part faces the rails. No corners, no crouching, no ladder.</span></div>
         <div><svg viewBox="0 0 100 100"><rect x="14" y="26" width="46" height="48" rx="6" fill="#0b2a26" stroke="#1a6357" stroke-width="3"/><rect x="24" y="36" width="26" height="28" rx="3" fill="#2ee6c5"><animate attributeName="x" values="24;24;60;60;24" keyTimes="0;.3;.5;.8;1" dur="4s" repeatCount="indefinite"/></rect><path d="M66 50 h20 m-6 -6 l6 6 l-6 6" fill="none" stroke="#86868b" stroke-width="3"/></svg><b>Modular</b><span>Every part is a swappable module. The robot restocks its own spares.</span></div>
@@ -538,23 +533,26 @@ h1 sup,h2 sup{font-size:.3em}
 <!-- 10 · competition -->
 <section class="sc" data-id="comp" data-len="300" data-stops=".6" data-ch="market">
   <div class="pin">
-    <div class="top x" id="c_h"><h2 style="font-size:clamp(34px,4vw,74px)">The market for autonomous operations<br><span class="g">offers great potential.</span></h2></div>
-    <div class="stage" style="top:28vh;bottom:6vh"><div class="mtx x" id="c_t"><svg viewBox="0 0 1000 600">
-      <defs><marker id="axar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#8e8e93"/></marker>
-        <radialGradient id="usglow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2ee6c5" stop-opacity=".16"/><stop offset="1" stop-color="#2ee6c5" stop-opacity="0"/></radialGradient></defs>
+    <div class="top x" id="c_h"><h2>The market for autonomous<br>operations <span class="g">offers great potential.</span></h2></div>
+    <div class="stage" style="top:33vh;bottom:5vh"><div class="mtx x" id="c_t"><svg viewBox="0 0 1000 600">
+      <defs><marker id="axar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,1 L10,5 L0,9z" fill="#999"/></marker>
+        <linearGradient id="usline" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2ee6c5"/><stop offset="1" stop-color="#5ac8fa"/></linearGradient>
+        <filter id="usblur" x="-40%" y="-140%" width="180%" height="380%"><feGaussianBlur stdDeviation="13"/></filter></defs>
       <rect x="0" y="0" width="1000" height="600" fill="#f5f5f7"/>
-      <ellipse cx="775" cy="185" rx="220" ry="130" fill="url(#usglow)"/>
-      <path d="M150 520 V62" stroke="#c7c7cc" stroke-width="2.5" marker-end="url(#axar)"/><path d="M150 520 H948" stroke="#c7c7cc" stroke-width="2.5" marker-end="url(#axar)"/>
-      <g font-size="15" font-weight="700" fill="#6e6e73" letter-spacing="1">
-        <text x="136" y="48" text-anchor="end">AUTONOMOUS</text>
-        <text x="134" y="495" text-anchor="end">HUMAN-</text><text x="134" y="515" text-anchor="end">CONTROLLED</text>
-        <text x="150" y="562" text-anchor="start">OBSERVATION</text><text x="948" y="562" text-anchor="end">EXECUTION</text>
+      <path d="M500 540 V62" stroke="#999" stroke-width="2.5" marker-end="url(#axar)"/><path d="M130 300 H868" stroke="#999" stroke-width="2.5" marker-end="url(#axar)"/>
+      <g font-size="19" font-weight="500" fill="#1d1d1f">
+        <text x="490" y="86" text-anchor="end">Autonomous</text>
+        <text x="490" y="527" text-anchor="end">Human-controlled</text>
+        <text x="140" y="326" text-anchor="start">Observation</text><text x="844" y="326" text-anchor="end">Execution</text>
       </g>
-      <g class="pt c0"><g transform="translate(285,222)"><image data-embed="c_energyrobotics" x="-87.5" y="-20.0" width="175" height="40" preserveAspectRatio="xMidYMid meet"/></g><g transform="translate(392,300)"><image data-embed="c_anybotics" x="-100.0" y="-16.0" width="200" height="32" preserveAspectRatio="xMidYMid meet"/></g></g>
-      <g class="pt c1"><g transform="translate(592,338)"><image data-embed="c_ulc" x="-64.0" y="-27.0" width="128" height="54" preserveAspectRatio="xMidYMid meet"/></g><g transform="translate(522,405)"><image data-embed="c_abb" x="-59.0" y="-22.5" width="118" height="45" preserveAspectRatio="xMidYMid meet"/></g></g>
-      <g class="pt c2"><g transform="translate(672,446)"><image data-embed="c_cbs" x="-80.0" y="-26.0" width="160" height="52" preserveAspectRatio="xMidYMid meet"/></g></g>
-      <g class="pt c3"><g transform="translate(800,486)"><image data-embed="c_spie" x="-67.5" y="-29.0" width="135" height="58" preserveAspectRatio="xMidYMid meet"/></g></g>
-      <g transform="translate(775,182)"><g class="pt us" id="c_us"><rect x="-108" y="-36" width="216" height="72" rx="18" fill="#08221e" stroke="#2ee6c5" stroke-width="2"/><image data-embed="logo" x="-84" y="-15" width="168" height="30" preserveAspectRatio="xMidYMid meet"/></g></g>
+      <g class="pt c0"><g transform="translate(227.0,181.5)"><image data-embed="c_energyrobotics" x="-76.5" y="-17.5" width="153" height="35" preserveAspectRatio="xMidYMid meet"/></g><g transform="translate(369.0,267.8)"><image data-embed="c_anybotics" x="-85.5" y="-13.5" width="171" height="27" preserveAspectRatio="xMidYMid meet"/></g></g>
+      <g class="pt c1"><g transform="translate(574.8,332.2)"><image data-embed="c_ulc" x="-67.5" y="-28.5" width="135" height="57" preserveAspectRatio="xMidYMid meet"/></g><g transform="translate(445.8,427.4)"><image data-embed="c_abb" x="-47.0" y="-18.0" width="94" height="36" preserveAspectRatio="xMidYMid meet"/></g></g>
+      <g class="pt c2"><g transform="translate(607.0,448.6)"><image data-embed="c_cbs" x="-66.0" y="-21.5" width="132" height="43" preserveAspectRatio="xMidYMid meet"/></g></g>
+      <g class="pt c3"><g transform="translate(747.6,467.8)"><image data-embed="c_spie" x="-59.5" y="-25.5" width="119" height="51" preserveAspectRatio="xMidYMid meet"/></g></g>
+      <g class="pt us" id="c_us"><g transform="translate(721.5,143.2)">
+        <rect x="-112" y="-29" width="224" height="58" rx="15" fill="url(#usline)" filter="url(#usblur)"><animate attributeName="opacity" values=".25;.5;.25" keyTimes="0;.5;1" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></rect>
+        <rect x="-112" y="-29" width="224" height="58" rx="15" fill="#0f1013" stroke="url(#usline)" stroke-width="1.5"/>
+        <image data-embed="logo" x="-89" y="-16" width="178" height="32" preserveAspectRatio="xMidYMid meet"/></g></g>
     </svg></div></div>
 
   </div>
@@ -583,7 +581,7 @@ h1 sup,h2 sup{font-size:.3em}
     <div class="lay" id="f_l">
       <img class="tlogo x" id="f_0" data-embed="logo" alt="VOLTcore">
       <h1 class="big x" id="f_1" style="font-size:clamp(40px,5.4vw,104px);line-height:1.04">Rethinking<br>energy infrastructure.</h1>
-      <h2 class="big x" id="f_2" style="margin-top:2vh;font-size:clamp(40px,5.4vw,104px);line-height:1.04;font-weight:800;letter-spacing:-.045em"><span class="g">Robot first.</span></h2>
+      <h2 class="big x" id="f_2" style="margin-top:2vh;font-size:clamp(40px,5.4vw,104px);line-height:1.04;font-weight:800;letter-spacing:-.045em"><span class="g">Robot-first.</span></h2>
       <div class="x" id="f_3"><span class="ctc">Contact us</span><p class="cnames">Alexander Spude · Caroline Wendlandt · Kacper Chłodny · Lukas Raymann · Syrine Torjmene</p></div>
     </div>
   </div>
@@ -828,7 +826,7 @@ D.max=p=>{
 D.zap=p=>{st('zshade',lerp(.9,.12,R(p,-.2,.2)));io('zcap',p,-.12,.12,.36,.5,50,.04);};
 
 const revW=[...document.querySelectorAll('#rev span')];
-D.reveal=p=>{revW.forEach((w,i)=>{const a=.02+i*.07;w.style.opacity=lerp(.14,1,R(p,a,a+.12)).toFixed(3);});
+D.reveal=p=>{revW.forEach((w,i)=>{const a=.02+i*.045;w.style.opacity=lerp(.14,1,R(p,a,a+.1)).toFixed(3);});
   const out=R(p,.85,1.05);st('rev',1-out*.9,`translate3d(0,${(-out*40).toFixed(1)}px,0)`);};
 
 D.retro=p=>{
@@ -861,7 +859,7 @@ D.market=p=>{io('k_h',p,-.3,-.03,null,null,40);
 const ticks=[0,1,2,3].map(k=>[...document.querySelectorAll('.mtx .c'+k)]);
 D.comp=p=>{io('c_h',p,-.3,-.03,null,null,40);io('c_t',p,-.15,.1,null,null,60);
   ticks.forEach((arr,k)=>{const t=R(p,.12+k*.08,.22+k*.08);arr.forEach(el=>{el.style.opacity=t.toFixed(3);el.style.transform=`scale(${lerp(.5,1,t).toFixed(3)})`;});});
-  const u=R(p,.48,.6);$('c_us').style.opacity=u.toFixed(3);$('c_us').style.transform=`scale(${lerp(.5,1,u).toFixed(3)})`;$('c_us').style.filter=`drop-shadow(0 0 ${(u*26).toFixed(1)}px rgba(46,230,197,.45))`;
+  const u=R(p,.48,.6);$('c_us').style.opacity=u.toFixed(3);$('c_us').style.transform=`scale(${lerp(.5,1,u).toFixed(3)})`;
 };
 
 const mems=[...document.querySelectorAll('.mem')];
@@ -900,9 +898,9 @@ const eLater=(ms,f)=>eT.push(setTimeout(f,ms));const eClear=()=>{while(eT.length
 const fmt=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0');
 function setTimer(s,ok){$('etimer').innerHTML='<small>'+(ok?'Power restored after':'Street without power')+'</small>'+fmt(s);$('etimer').classList.toggle('ok',!!ok);}
 function resetErika(){eRun=false;Object.assign(robot,{cx:-0.5,cy:1.0,tool:0,lever:-1.15,button:0,light:0,led:'red'});Object.assign(target,{cx:-0.5,cy:1.0,tool:0,lever:-1.15,button:0,light:0});
-  ['o1','o2','o3'].forEach(id=>$(id).classList.remove('rec','on'));['bl','bc'].forEach(id=>$(id).classList.remove('on'));$('sg').classList.remove('on');$('vs').classList.remove('on');$('mail').classList.remove('on');$('foff').style.opacity=1;setTimer(0);}
+  ['o1','o2','o3'].forEach(id=>$(id).classList.remove('rec','on'));['bl','bc'].forEach(id=>$(id).classList.remove('on'));$('sg').classList.remove('on');$('vs').classList.remove('on');$('foff').style.opacity=1;setTimer(0);}
 function finalErika(){resetErika();$('o1').classList.add('on');['bl','bc'].forEach(id=>$(id).classList.add('on'));$('sg').classList.add('on');$('foff').style.opacity=0;
-  Object.assign(robot,{cx:0.65,cy:1.24,light:1,lever:0.35,led:'green'});Object.assign(target,{cx:0.65,cy:1.24,light:1,lever:0.35});setTimer(291,true);$('vs').classList.add('on');$('mail').classList.add('on');}
+  Object.assign(robot,{cx:0.65,cy:1.24,light:1,lever:0.35,led:'green'});Object.assign(target,{cx:0.65,cy:1.24,light:1,lever:0.35});setTimer(291,true);$('vs').classList.add('on');}
 function startErika(){resetErika();
   eLater(500,()=>$('o1').classList.add('rec'));
   eLater(1400,()=>{$('o1').classList.remove('rec');$('o1').classList.add('on');});
@@ -910,8 +908,7 @@ function startErika(){resetErika();
   eLater(3400,()=>{target.cx=0.65;target.cy=1.24;$('sg').classList.add('on');});
   eLater(4800,()=>{target.tool=1;target.lever=0.35;});
   eLater(6500,()=>{target.tool=0;robot.led='green';eRun=false;setTimer(291,true);});
-  eLater(7200,()=>$('vs').classList.add('on'));
-  eLater(7900,()=>$('mail').classList.add('on'));}
+  eLater(7200,()=>$('vs').classList.add('on'));}
 function erikaUpdate(p,dir){if(p<.4&&eph!==0){eClear();resetErika();eph=0;}
   if(p>=.55&&eph===0){if(dir>0){eph=1;startErika();}else{eph=2;finalErika();}}}
 function updateErika(dt){for(const k of ['cx','cy','tool','lever','button','light'])robot[k]+=(target[k]-robot[k])*Math.min(1,dt*3.2);
